@@ -47,6 +47,22 @@
    background-color: rgb(118, 157, 43);
    padding-top: 20px;
    text-align: center;
+   font-size: 45px;
+   letter-spacing: 2px;
+   word-spacing: 2px;
+}
+
+.navbar ul {
+
+}
+
+.navbar li {
+   display: inline-block;
+   padding: 5px;
+
+}
+
+.navbar li a {
 }
 
 .footer {
@@ -62,6 +78,16 @@
    display: inline-block;
 }
 
-.navbar ul li a {
+.navbar li a {
    text-decoration: none;
+   color:white;
+}
+
+.navbar a:hover {
+   color:#de549b;
+   background-color:white;
+}
+
+main{
+   height: 1000px;
 }
