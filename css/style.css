@@ -1,0 +1,67 @@
+/*
+
+#politikk {
+}
+
+#om {
+
+}
+
+#styret {
+
+}
+
+#bli-med {
+
+}
+
+
+*/
+
+.hero-mdg {
+   background-image: url("../assets/MDG_moto.png");
+   position: relative;
+   background-position: left;
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 100vh;
+   width: 100vw;
+   top: 0;
+}
+
+.hero-natur {
+   background-image: url("../assets/Natur.jpeg");
+   position: absolute;
+   background-position: left;
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 100vh;
+   width: 50vw;
+}
+
+.navbar {
+   position: sticky;
+   top: 0;
+   height: 100px;
+   width: 100%;
+   background-color: rgb(118, 157, 43);
+   padding-top: 20px;
+   text-align: center;
+}
+
+.footer {
+   width: 100%;
+   height: 100vh;
+}
+
+.navbar ul {
+   padding: 25px;
+}
+
+.navbar ul li {
+   display: inline-block;
+}
+
+.navbar ul li a {
+   text-decoration: none;
+}
