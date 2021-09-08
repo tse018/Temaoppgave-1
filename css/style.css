@@ -1,6 +1,21 @@
-
-/*
 #politikk {
+   width: 100vw;
+   top:0;
+}
+
+#politikk .grid-container {
+   display: grid;
+   grid-template-columns: auto auto auto auto;
+   background-color: green;
+   border: 1px solid;
+   padding: 10px;
+   margin: 10px;
+}
+
+#politikk .grid-item{
+   background-color: green;
+   border: 1px solid;
+   font-size:30px;
 }
 
 #om {
@@ -15,7 +30,7 @@
 
 }
 
-*/
+
 
 /* Full viewport header / hero-image */
 .hero-mdg {
