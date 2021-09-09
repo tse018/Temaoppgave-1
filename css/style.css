@@ -1,42 +1,75 @@
+/* Section Politikk */
 #politikk {
+   display: flex;
+   flex-wrap: wrap;
    width: 100vw;
-   top:0;
+   height: 100vh;
+   justify-content: center;
 }
 
-#politikk .grid-container {
-   display: grid;
-   grid-template-columns: auto auto auto auto;
-   background-color: green;
-   border: 1px solid;
-   padding: 10px;
-   margin: 10px;
+/* underseksjoner av politikk */
+#politikk .klima {
+   position: relative;
+   width: 25vw;
+   height: 25vh;
 }
 
-#politikk .grid-item{
-   background-color: green;
-   border: 1px solid;
-   font-size:30px;
+#politikk .by {
+   position: relative;
+   width: 25vw;
+   height: 25vh;
 }
 
-#om {
-
+#politikk .olje {
+   position: relative;
+   width: 25vw;
+   height: 25vh;
 }
 
-#styret {
-
+#politikk .helseogomsorg {
+   position: relative;
+   width: 25vw;
+   height: 25vh;
 }
 
-#bli-med {
-
+#politikk .ruspolitikk {
+   position: relative;
+   width: 25vw;
+   height: 25vh;
 }
 
+#politikk .sosialrettferdighet {
+   position: relative;
+   width: 25vw;
+   height: 25vh;
+}
 
+#politikk header {
+   font-size: 30px;
+   text-align: left;
+   margin-left: 30px;
+   width: 100%;
+}
+
+#om .video {
+   
+}
+
+/*
+
+#om{}
+
+#styret{}
+
+#bli-med{}
+
+*/
 
 /* Full viewport header / hero-image */
 .hero-mdg {
    background-image: url("../assets/MDG_moto.png");
    position: relative;
-   background-position: 3em;
+   background-position: left;
    background-repeat: no-repeat;
    background-size: cover;
    height: 100vh;
@@ -53,40 +86,29 @@
    width: 50vw;
 }
 
-/* navigasjonsbar - fixed on top */
+/* navigasjonsbar - Sticked on top */
 .navbar {
    position: sticky;
    top: 0;
    height: 100px;
    width: 100vw;
+   z-index: 1;
+   background-color: rgba(118, 157, 43, 0.8);
+   text-align: center;
+}
+
+
+
+
+/* header decoration */
+.undertittel {
+   font-size: 35px;
+   width: 100%;
+   margin: 30px 0px;
+   padding: 30px 100px;
    background-color: rgb(118, 157, 43);
-   padding-top: 20px;
-   text-align: center;
-   font-size: 45px;
-   letter-spacing: 2px;
-   word-spacing: 2px;
+   color: white;
 }
-
-.footer {
-   text-align: center;
-   margin: 10px;
-}
-
-/*
-.navbar ul {
-
-}
-*/
-
-.navbar li {
-   display: inline-block;
-   padding: 5px;
-}
-
-/*
-.navbar li a {
-}
-*/
 
 .footer {
    width: 100%;
@@ -94,26 +116,39 @@
 }
 
 .navbar ul {
-   padding: 20px;
+   width: 100vw;
+   height: 120px;
+   padding: 30px;
 }
 
-/*
-.navbar ul li {
+.navbar li {
+   display: inline-block;
+   margin: 10px 50px 30px 20px;
+   font-size: 30px;
+   letter-spacing: 2px;
 }
-*/
 
 .navbar li a {
    text-decoration: none;
    color: white;
+   height: 100vh;
+   width: 100vw;
 }
 
 .navbar a:hover {
    color: #de549b;
    background-color: white;
-   font-size: 50px;
    font-weight: bold;
+}
+
+
+h2 {
+   font-size: 30px;
 }
 
 main {
    height: 2000px;
 }
+
+
+
