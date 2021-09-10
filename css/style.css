@@ -12,21 +12,24 @@
 #politikkområde .flexbox {
    position: relative;
    width: 25vw;
-   height: 80vh;
+   height: 100vh;
    margin: 10px 15px 25px;
-   padding-top:5px;
+   padding-top: 5px;
+   padding-left: 15px;
    background-color: aliceblue;
    font-size: 20px;
+   text-align: left;
 }
 
+#om{
+   width: 100vw;
+   height: 100vh;
+}
+
+
 /*
-
-#om{}
-
 #styret{}
-
 #bli-med{}
-
 */
 
 /* hero-MDG img with full-vw */
@@ -38,7 +41,6 @@
    background-size: cover;
    height: 100vh;
    width: 100vw;
-   overflow: scroll;
 }
 
 /* hero-landscape img with 50% vw */
@@ -84,6 +86,7 @@
 }
 
 
+
 /* styling navbar ul */
 .navbar ul {
    margin: 0;
@@ -113,3 +116,32 @@
    font-weight: bold;
 }
 
+.navbar a:active {
+   background-color: #265301;
+}
+
+.navbar a:focus {
+   background-color: #265301;
+   font-weight: bold;
+}
+
+.navbar img {
+   float:left;
+   height: 100px;
+   margin-left: 50px;
+   padding-left: 50px;
+}
+.video-container {
+   position: relative;
+   width: 20vw;
+   height: 80vh;
+   margin-top: 40px;
+}
+
+.video {
+   position: absolute;
+   width: 500px;
+   height: 500px;
+   overflow: hidden;
+   margin: 0 500px;
+}
