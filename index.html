@@ -2,24 +2,23 @@
 <html lang="no">
    <head>
       <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Temaoppgave1</title>
-      <link rel="stylesheet" href="css/reset.css"  />
-      <link rel="stylesheet" href="css/style.css"  />
+      <link rel="stylesheet" href="css/reset.css" />
+      <link rel="stylesheet" href="css/style.css" />
    </head>
 
    <body>
-      <!-- full hero viewport image -->
-      <header class="hero-mdg">
-         <div class="hero-natur"></div>
+      <!-- full hero-vw/vh image -->
+      <header class="hero-fullvw">
+         <div class="hero-halfvw"></div>
       </header>
-   <body>
 
       <!-- Sticky navigasjonsbar - lenke til ulike sections -->
       <nav class="navbar">
          <ul>
             <li><a href="#top">Hjem</a></li>
-            <li><a href="#politikk">Politikk</a></li>
+            <li><a href="#politikkområde">politikk</a></li>
             <li><a href="#om">Om</a></li>
             <li><a href="#styret">Styret</a></li>
             <li><a href="#bli-med">Bli med</a></li>
@@ -28,55 +27,65 @@
 
       <!-- delt opp i ulike sections -->
       <main>
-         <header class="undertittel">Politikkområde</header>
-         <section id="politikk">
-               <article class="klima">
-                  <h2>Klima</h2>
-                  <p>sfsdfs</p>
-               </article>
+         <header class="header">Politikkområde</header>
+         <section id="politikkområde">
+            <article class="flexbox">
+               <h2 class="h2">Klima</h2>
+               <p class="typography">Klimaendring er den største
+                  krisen menneskeheten står overfor.
+                  Skal vi begrense noen av de verste
+                  konsekvensene må vi handle nå.<br>
+                  Vi vil:</br>
+                  <ul>
+                     <li>Redusere utslipp av klimagasser</li>
+                     <li>Stanse åpning av nye og utvidelse av 
+                        eksisterende olje- og gassfelt.</li>
+                     <li>Innføre ordning med klimabelønning 
+                        (karbonavgift)</li>
+                     <li>Fase ut Salg av nye fossile personbiler og motorsykler</li>
+                  </ul>
+               </p>
+            </article>
 
-               <article class="by">
-                  <h2>By</h2>
-                  <p>dsfnakjwfn</p>
-               </article>
+            <article class="flexbox">
+               <h2 class="h2">By</h2>
+               <p>dsfnakjwfn</p>
+            </article>
 
-               <article class="olje">
-                  <h2>Olje</h2> 
-                  <p>lewnqlknerkl</p>
-               </article> 
+            <article class="flexbox">
+               <h2 class="h2">Olje</h2>
+               <p>lewnqlknerkl</p>
+            </article>
+             
+            <article class="flexbox">
+               <h2 class="h2">Helse og omsorg</h2>
+               <p>kwefklewnqlfk</p>
+            </article>
 
-
-               <article class="helseogomsorg">
-                  <h2>Helse og omsorg</h2>
-                  <p>kwefklewnqlfk</p>
-               </article>
-
-               <article class="ruspolitikk">
-                  <h2>Rus</h2>
-                  <p>kfndskjfndjskn</p>
-               </article>
-
-                <article class="sosialrettferdighet">
-                  <h2>Sosialrettferdighet</h2>
-                  <p>jfdnskfjndsj</p>
-               </article>
+            <article class="flexbox">
+               <h2 class="h2">Rus</h2>
+               <p>kfndskjfndjskn</p>
+            </article>
+             
+            <article class="flexbox">
+               <h2 class="h2">Sosialrettferdighet</h2>
+               <p>jfdnskfjndsj</p>
+            </article>
          </section>
 
+         <header class="header">Om partiet</header>
          <section id="om">
-            <header class="undertittel">Om partiet</header>
-            <div class="video"></div>
+            <iframe class="video"></iframe>
          </section>
 
-         <section id="styret">
-            <header class="undertittel">Politikere</header>
-         </section>
+         <header class="header">Politikere</header>
+         <section id="styret"></section>
 
-         <section id="bli-med">
-            <header class="undertittel">Bli med</header>
-         </section>
+         <header class="header">Bli med</header>
+         <section id="bli-med"></section>
       </main>
 
-      <footer class="bunntekst">
+      <footer id="footer">
          <p>Bunntekst</p>
       </footer>
    </body>
