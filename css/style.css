@@ -8,11 +8,30 @@
    overflow: scroll;
 }
 
+#om {
+   width: 80vw;
+   height: 100vh;
+   margin: auto;
+}
+
+#styret {
+   display: grid;
+   align-items: center;
+}
+
+/*
+
+#bli-med {
+
+}
+
+*/
+
 /* underseksjoner av politikk */
-#politikkområde .flexbox {
+#politikkområde .flex-item {
    position: relative;
    width: 25vw;
-   height: 100vh;
+   min-height: 50vh;
    margin: 10px 15px 25px;
    padding-top: 5px;
    padding-left: 15px;
@@ -21,16 +40,16 @@
    text-align: left;
 }
 
-#om{
-   width: 100vw;
-   height: 100vh;
+#om .video-container {
+   position: relative;
 }
 
-
-/*
-#styret{}
-#bli-med{}
-*/
+#om .video {
+   position: absolute;
+   width: 500px;
+   height: 500px;
+   float: right;
+}
 
 /* hero-MDG img with full-vw */
 .hero-fullvw {
@@ -85,8 +104,6 @@
    height: 100vh;
 }
 
-
-
 /* styling navbar ul */
 .navbar ul {
    margin: 0;
@@ -126,22 +143,12 @@
 }
 
 .navbar img {
-   float:left;
+   float: left;
    height: 100px;
    margin-left: 50px;
    padding-left: 50px;
 }
-.video-container {
-   position: relative;
-   width: 20vw;
-   height: 80vh;
-   margin-top: 40px;
-}
 
-.video {
-   position: absolute;
-   width: 500px;
-   height: 500px;
-   overflow: hidden;
-   margin: 0 500px;
+#politikkområde .flex-item ul {
+   list-style: circle inside;
 }
