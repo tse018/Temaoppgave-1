@@ -1,58 +1,26 @@
-/* main section politikk  */
-#politikkområde {
-   display: flex;
-   flex-wrap: wrap;
-   width: 100vw;
-   height: 100vh;
-   justify-content: center;
-   overflow: scroll;
+/* Unique IDs for navigation purpose */
+#section1{
+   padding: 80px 0 0 0;
+   margin: -60px 0 0 0;
 }
 
-#om {
-   width: 80vw;
-   height: 100vh;
-   margin: auto;
+#section2 {
+   padding: 80px 0 0 0;
+   margin: -60px 0 0 0
 }
 
-#styret {
-   display: grid;
-   align-items: center;
+#section3 {
+   padding: 80px 0 0 0;
+   margin: -60px 0 0 0;
 }
 
-/*
-
-#bli-med {
-
-}
-
-*/
-
-/* underseksjoner av politikk */
-#politikkområde .flex-item {
-   position: relative;
-   width: 25vw;
-   min-height: 50vh;
-   margin: 10px 15px 25px;
-   padding-top: 5px;
-   padding-left: 15px;
-   background-color: aliceblue;
-   font-size: 20px;
-   text-align: left;
-}
-
-#om .video-container {
-   position: relative;
-}
-
-#om .video {
-   position: absolute;
-   width: 500px;
-   height: 500px;
-   float: right;
+#section4 {
+   padding: 80px 0 0 0;
+   margin: -60px 0 0 0;
 }
 
 /* hero-MDG img with full-vw */
-.hero-fullvw {
+.full-img{
    background-image: url("../assets/MDG_moto.png");
    position: relative;
    background-position: left;
@@ -63,7 +31,7 @@
 }
 
 /* hero-landscape img with 50% vw */
-.hero-halfvw {
+.half-img {
    background-image: url("../assets/Natur.jpeg");
    position: absolute;
    background-position: left;
@@ -82,26 +50,6 @@
    z-index: 1;
    background-color: rgba(118, 157, 43, 0.8);
    text-align: center;
-}
-
-/* using same header decorations */
-.header {
-   font-size: 35px;
-   width: 100%;
-   margin: 30px 0px;
-   padding: 0 170px;
-   background-color: rgb(118, 157, 43);
-   color: white;
-}
-
-/* applying same typography for all h2 elements */
-.h2 {
-   font-size: 30px;
-}
-
-.footer {
-   width: 100%;
-   height: 100vh;
 }
 
 /* styling navbar ul */
@@ -149,6 +97,87 @@
    padding-left: 50px;
 }
 
-#politikkområde .flex-item ul {
+/* using same header decorations */
+.header {
+   font-size: 35px;
+   width: 100%;
+   margin: 30px 0px;
+   padding: 0 170px;
+   background-color: rgb(118, 157, 43);
+   color: white;
+}
+
+/* applying same typography for all h2 elements */
+.h2 {
+   font-size: 30px;
+}
+
+/* main section politikk with flexbox  */
+.flexbox-container {
+   display: flex;
+   flex-wrap: wrap;
+   width: 100vw;
+   min-height: 100vh;
+   justify-content: center;
+   overflow: scroll;
+}
+
+/* creating content boxes / flex-items*/
+.flex-item {
+   position: relative;
+   width: 25vw;
+   min-height: 50vh;
+   margin: 10px 15px 25px;
+   padding-top: 5px;
+   padding-left: 15px;
+   background-color: aliceblue;
+   font-size: 20px;
+   text-align: left;
+}
+
+.flex-item li {
    list-style: circle inside;
 }
+
+.om {
+   width: 80vw;
+   height: 100vh;
+   margin: auto;
+}
+
+.video-container {
+   position: relative;
+}
+
+.video {
+   display: flex;
+   position: absolute;
+   width: 500px;
+   height: 500px;
+   float: right;
+}
+
+.styret {
+   display: grid;
+   align-items: center;
+}
+
+/*
+
+.bli-med{}
+
+
+.footer{
+}
+
+*/
+
+/*
+
+
+
+/*
+Spørsmål:
+ -liste få teksten til å være aligned equally
+ -se på navbar-section navigasjon
+*/
