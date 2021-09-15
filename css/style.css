@@ -115,8 +115,6 @@ and sticked on top when scrolling */
    padding: 0 0 0 50px;
 }
 
-
-
 /* section politikk with flexbox  */
 .flexbox-container {
    display: flex;
@@ -146,21 +144,28 @@ and sticked on top when scrolling */
 
 /* section om */
 .om {
+   display: flex;
+   justify-content: center;
+   align-items: center;
    width: 100vw;
    height: 500px;
 }
 
-.video-container {
+.flex-leftside {
    position: relative;
+   width: 25vw; /* each flex item will be 25 viewport */
+   height: 500px;
+   margin: 0 15px;
+   font-size: 20px;
+   text-align: left;
 }
 
 .video {
-   position: absolute;
-   width: 500px;
+   position: relative;
+   width: 75vw; /* each flex item will be 25 viewport */
    height: 500px;
-   float: right;
+   margin: 0px 15px;
 }
-
 
 /* section styret */
 .styret {
@@ -168,20 +173,13 @@ and sticked on top when scrolling */
    align-items: center;
 }
 
-
-
-
-
-
-
 /*section bli-med */
-.bli-med{
+.bli-med {
    width: 100vw;
    height: 200vh;
 }
 
-
-.fieldset{
+.fieldset {
    border: 10px solid rgba(118, 157, 43);
    display: block;
    margin-inline-start: 100px;
@@ -189,32 +187,33 @@ and sticked on top when scrolling */
 }
 
 /* form title */
-.legend{
+.legend {
    text-align: left;
    margin: 0 0 0 100px;
    font-size: 30px;
 }
 
 /* styling form elements */
-input, select, textarea {
+input,
+select,
+textarea {
    display: block;
    padding: 5px;
    margin: 10px;
-   width:500px;
+   width: 500px;
 }
 
 label {
    margin-left: 20px;
 }
 
-
-.footer{
+.footer {
    width: 100vw;
    height: 500px;
    border: 10px solid green;
 }
 
-.flexbox-container {
+.footer-container {
    display: flex;
 }
 
