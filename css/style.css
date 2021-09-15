@@ -18,20 +18,7 @@ will display little below navbar when clicked */
    margin: -60px 0 0;
 }
 
-/* using same header decoration */
-.header {
-   font-size: 35px;
-   width: 100%;
-   margin: 30px 0px;
-   padding: 0 170px;
-   background-color: rgb(118, 157, 43);
-   color: white;
-}
-
-/* applying same typography for all h2 elements */
-.h2 {
-   font-size: 30px;
-}
+/* applying same style for h2 elements in om-section */
 
 /* MDG img with full-vw */
 .full-img {
@@ -68,13 +55,13 @@ and sticked on top when scrolling */
 }
 
 /* styling navbar ul */
-.navbar ul {
+.navbar-ul {
    margin: 0;
    padding: 20px 0;
 }
 
 /* making navbar inline blocks  */
-.navbar li {
+.navbar-li {
    display: inline-block;
    margin: 10px 50px 30px 20px;
    font-size: 30px;
@@ -108,11 +95,21 @@ and sticked on top when scrolling */
 }
 
 /* MDG-logo on left-side navbar */
-.navbar img {
+.logo {
    float: left;
    height: 100px;
    margin: 0 0 0 50px;
    padding: 0 0 0 50px;
+}
+
+/* using same header decoration */
+.header {
+   font-size: 35px;
+   width: 100%;
+   margin: 30px 0px;
+   padding: 0 170px;
+   background-color: rgb(118, 157, 43);
+   color: white;
 }
 
 /* section politikk with flexbox  */
@@ -137,6 +134,11 @@ and sticked on top when scrolling */
    text-align: left;
 }
 
+/* applying same typography for all h2 elements */
+.h2 {
+   font-size: 30px;
+}
+
 /* styling list elements inside flex-items */
 .flex-item li {
    list-style: square outside;
@@ -153,30 +155,72 @@ and sticked on top when scrolling */
 
 .flex-leftside {
    position: relative;
-   width: 25vw; /* each flex item will be 25 viewport */
+   width: 35vw; /* each flex item will be 25 viewport */
    height: 500px;
    margin: 0 15px;
    font-size: 20px;
    text-align: left;
 }
 
+.p{
+   text-align: left;
+   letter-spacing: 1.5px;
+   line-height: 2;
+}
+
+
 .video {
    position: relative;
-   width: 75vw; /* each flex item will be 25 viewport */
+   width: 65vw; /* each flex item will be 25 viewport */
    height: 500px;
    margin: 0px 15px;
 }
 
 /* section styret */
 .styret {
-   display: grid;
-   align-items: center;
+   width: 100vw;
+   min-height: 100vh;
+   padding: 0 0 0 50px;
 }
 
-/*section bli-med */
+.wrapper {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: 1fr;
+   grid-gap: 20px;
+}
+
+/*
+.box1{}
+
+.box2{}
+
+.box3{}
+
+.box4{}
+
+.box5{}
+
+.box6{}
+
+.box7{}
+
+.box8{}
+
+.box9{}
+
+.box10{}
+
+.box11{}
+
+.box12{}
+*/
+
+/* section bli-med */
 .bli-med {
    width: 100vw;
-   height: 200vh;
+   min-height: 150vh;
+   margin: 0 0 70px;
 }
 
 .fieldset {
@@ -209,20 +253,44 @@ label {
 
 .footer {
    width: 100vw;
-   height: 500px;
-   border: 10px solid green;
+   background-color: rgba(118, 157, 43, 0.8);
+   color: white;
+   font-size: 20px;
+   text-align: left;
 }
 
 .footer-container {
+   border: 10px solid;
    display: flex;
+   flex-wrap: wrap;
+   width: 100vw;
+   height: 50vh;
 }
 
-/*
-.flex-item1{}
+.flex-item1 {
+   width: 40vw;
+   margin: 40px -10px 0;
+}
 
-.flex-item2{}
+.flex-item2 {
+   width: 30vw;
+   padding: 20px 0 0;
+   align-items: right;
+}
 
-.flex-item3{}
+.flex-item3 {
+   width: 30vw;
+   padding: 20px 0 0;
+   align-items: right;
+}
 
-.flex-item4{}
-*/
+.h3 {
+   font-size: 25px;
+   line-height: 80px;
+}
+
+.MDG{
+   font-size: 25px;
+   line-height: 80px;
+   font-weight: bold;
+}

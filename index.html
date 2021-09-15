@@ -5,11 +5,11 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Temaoppgave1</title>
       <link rel="stylesheet" href="css/reset.css" />
-      <link rel="stylesheet" href="../assets/font.css" />
+      <link rel="stylesheet" href="assets/inter.css">
       <link rel="stylesheet" href="css/style.css" />
    </head>
 
-   <body class="fontsforweb_fontid_80802">
+   <body>
       <!-- full hero-vw /vh image -->
       <header class="full-img">
          <div class="half-img"></div>
@@ -17,13 +17,14 @@
 
       <!-- Sticky navigasjonsbar - lenke til ulike sections -->
       <nav class="navbar">
-         <img src="assets/MDG_logo.png" alt="MDG-logo">
-         <ul>
-            <li><a href="#top">Hjem</a></li>
-            <li><a href="#section1">Politikk</a></li>
-            <li><a href="#section2">Om</a></li>
-            <li><a href="#section3">Styret</a></li>
-            <li><a href="#section4">Bli med</a></li>
+         <img div class="logo"
+         src="assets/MDG_logo.png" alt="MDG-logo">
+         <ul class="navbar-ul">
+            <li class="navbar-li"><a href="#top">Hjem</a></li>
+            <li class="navbar-li"><a href="#section1">Politikk</a></li>
+            <li class="navbar-li"><a href="#section2">Om</a></li>
+            <li class="navbar-li"><a href="#section3">Styret</a></li>
+            <li class="navbar-li"><a href="#section4">Bli med</a></li>
          </ul>
       </nav>
 
@@ -94,6 +95,10 @@
             <article class="flex-item">
                <h2 class="h2">Ruspolitikk</h2>
                <p>kfndskjfndjskn</p>
+               <ul>
+                  <li>sdfkjsdj</li>
+
+               </ul>
             </article>
              
             <article class="flex-item">
@@ -122,33 +127,75 @@
          <div id="section2"></div>
          <header class="header">Om partiet</header>
          <section class ="om">
-               <div class="flex-leftside">
-                  <p> Miljøpartiet DeGrønne fdsd </p>
-               </div>
-                  <iframe class="video"
-                     src="https://www.youtube.com/embed/ZA7Sppg1-oQ"
-                     title="En framtid du gleder deg til"
-                     name="MDG video"
-                     type="video/mp4"
-                     frameborder="0"
-                     allow="accelerometer;
-                     autoplay;
-                     clipboard-write;
-                     encrypted-media;                        gyroscope;
-                     picture-in-picture"
-                     allowfullscreen>
-                  </iframe>
+            <div class="flex-leftside">
+               <p class="p">I MDG har vi som utgangspunkt at mennesker
+                  ikke er hevet over naturen, men at vi er en del av den.
+                  Vi har tre grunnleggende solidaritetsprinsipper for all
+                  vår politikk: solidaritet med andre mennesker,
+                  fremtidige generasjoner, og dyr og natur.
+                  Vi er en del av en internasjonal,
+                  grønn grasrotbevegelse med et globalt perspektiv.
+                  Sosial rettferdighet for alle, uavhengig av klasse,
+                  legning eller hudfarge er sentrale verdier.
+               </p>
+            </div>
+
+            <iframe class="video"
+               src="https://www.youtube.com/embed/ZA7Sppg1-oQ"
+               title="En framtid du gleder deg til"
+               name="MDG video"
+               type="video/mp4"
+               frameborder="0"
+               allow="accelerometer;
+               autoplay;
+               clipboard-write;
+               encrypted-media;                        gyroscope;
+               picture-in-picture"
+               allowfullscreen>
+            </iframe>
          </section>
 
          <!-- Section3 - Styret -->
          <div id="section3"></div>
          <header class="header">Politikere</header>
          <section class="styret">
-            <img src="assets/list-ArildHermstad.jpeg" alt="">
-            <img src="assets/list-KrissRokkanIversen.jpeg" alt="">
-            <img src="assets/list-OdaSofiePettersen.jpeg" alt="">
-            <img src="assets/list-UneBastholm.jpeg" alt="">
-            <img src="assets/list-lan_marie_berg.png" alt="">
+            <div class="wrapper">
+               <img class="box1"
+               src="assets/list-UneBastholm.jpg" alt="Une Bastholm">
+
+               <img class="box2"
+               src="assets/list-ArildHermstad.jpg" alt="Arild Hermstad">
+
+               <img class="box3"
+               src="assets/list-KrissRokkanIversen.jpg" alt="Kriss Rokkan Iversen">
+
+               <img class="box4"
+               src="assets/list-OdaSofiePettersen.jpeg" alt="Oda Sofie Pettersen">
+
+               <img class="box5"
+               src="assets/list-lan_marie_berg.png" alt="Lan Marie">
+
+               <img class="box6"
+               src="assets/list-AskIbsenLindal.jpeg" alt="Ibsen Lindal">
+
+               <img class="box7"
+               src="assets/list-FaridShariati.jpeg" alt="Farid Shariati">
+
+               <img class="box8"
+               src="assets/list-MargitFausko.jpeg" alt="Margit Fausko">
+
+               <img class="box9"
+               src="assets/list-ThomasJohansen.jpeg" alt="Thomas Johansen">
+
+               <img class="box10"
+               src="assets/list-MariusDalin.jpeg" alt="Marius Dalin">
+
+               <img class="box11"
+               src="assets/list-UlrikkeTorgersen.jpeg" alt="Ulrikke Torgersen">
+
+               <img class="box12"
+               src="assets/list-CarlJohansen.jpeg" alt="Carl Johansen">
+            </div>
          </section>
 
 
@@ -163,7 +210,7 @@
                   <input
                      type="text"
                      name="firstname"
-                     id="fornavn"
+                     id="firstame"
                      value=""
                      autocomplete="on"
                      required>
@@ -172,12 +219,12 @@
                   <input
                      type="text"
                      name="lastname"
-                     id="etternavn"
+                     id="lastname"
                      value=""
                      autocomplete="on"
                      required>
 
-                  <label for="addresse">Addresse:</label>
+                  <label for="address">Addresse:</label>
                   <input
                      type="text"
                      name="address"
@@ -231,7 +278,7 @@
                         <option value="31">31</option>
                      </select>
 
-                     <select name="month" id="birthdate">
+                     <select name="month" id="birthday">
                         <option value="--">--</option>
                         <option value="1">01</option>
                         <option value="2">02</option>
@@ -316,7 +363,7 @@
                      <label for="number">Telefon:</label>
                      <input
                         type="number"
-                        name="telefon"
+                        name="number"
                         value=""
                         autocomplete="on"
                         required>
@@ -356,6 +403,7 @@
                         <option value="yes">Ja</option>
                         <option value="no">Nei</option>
                      </select>
+                     <input type="submit" value="send data">
                </fieldset>
                <fieldset class="fieldset">
                   <legend class="legend">Betaling</legend>
@@ -384,11 +432,27 @@
       <footer class="footer">
          <div class="footer-container">
             <div class="flex-item1">
-                  <img src="assets/MDG_logo.png" alt="MDG-logo">
+               <img div class="logo"
+               src="assets/MDG_logo.png" alt="MDG-logo">
             </div>
-            <div class="flex-item2">innhold</div>
-            <div class="flex-item3">link</div>
-            <div class="flex-item4">mer info</div>
+            <div class="flex-item2">
+               <h3 class="MDG">
+                     Miljøpartiet De Grønne
+               </h3>
+               <p>Hausmanns gate 19, 0182 Oslo</p>
+               <p>E-post: mdg@mdg.no</p>
+               <p>Telefon: 23 69 94 11</p>
+               <p class="bold">Donasjoner:</p>
+               <p>Kontonummer: 1254.05.52477</p>
+               <p>Vipps-nummer: 13124</p>
+            </div>
+
+            <div class="flex-item3">
+               <h3 class="h3">Mer info</h3>
+               <p>jndsknakjs</p>
+               <p>kdnjsafjsdnk</p>
+               <p>jskdlfjsdkljfkls</p>
+            </div>
          </div>
       </footer>
    </body>
