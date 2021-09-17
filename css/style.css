@@ -19,8 +19,8 @@ will display little below navbar when clicked */
 }
 
 .font-style {
-font-family: 'Inter', sans-serif;
-font-family: 'Montserrat', sans-serif;
+   font-family: "Inter", sans-serif;
+   font-family: "Montserrat", sans-serif;
 }
 
 /* applying same style for h2 elements in om-section */
@@ -167,12 +167,11 @@ and sticked on top when scrolling */
    text-align: left;
 }
 
-.p{
+.leftside-content {
    text-align: left;
    letter-spacing: 1.5px;
    line-height: 2;
 }
-
 
 .video {
    position: relative;
@@ -226,6 +225,10 @@ and sticked on top when scrolling */
    width: 100vw;
    min-height: 150vh;
    margin: 0 0 70px;
+}
+
+.form-container {
+   width: 100px;
 }
 
 .fieldset {
@@ -294,19 +297,19 @@ label {
    line-height: 80px;
 }
 
-.MDG{
+.MDG {
    font-size: 25px;
    line-height: 80px;
    font-weight: bold;
 }
 
 .link-style {
-   display:block;
+   display: block;
    color: white;
    text-decoration: none;
 }
 
-.link-style:hover{
+.link-style:hover {
    color: #de549b;
    background-color: white;
    font-weight: bold;
