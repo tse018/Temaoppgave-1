@@ -23,7 +23,17 @@ will display little below navbar when clicked */
    font-family: "Montserrat", sans-serif;
 }
 
-/* applying same style for h2 elements in om-section */
+/* applying same typography for all h2 and h3 elements */
+.h2 {
+   padding: 5px 0 10px;
+   font-size: 30px;
+   line-height: 2;
+}
+
+.h3 {
+   font-size: 25px;
+   line-height: 80px;
+}
 
 /* MDG img with full-vw */
 .full-img {
@@ -134,19 +144,19 @@ and sticked on top when scrolling */
    min-height: 50vh;
    margin: 10px 15px 25px;
    padding: 5px 0 0 15px;
-   background-color: aliceblue;
+   border: 2px solid rgba(118, 157, 43);
    font-size: 20px;
    text-align: left;
-}
-
-/* applying same typography for all h2 elements */
-.h2 {
-   font-size: 30px;
+   line-height: 2;
 }
 
 /* styling list elements inside flex-items */
-.flex-item li {
-   list-style: square outside;
+.flex-item li{
+   list-style: square inside;
+}
+
+.button{
+   margin:20px 5px 0 0;
 }
 
 /* section om */
@@ -196,27 +206,16 @@ and sticked on top when scrolling */
 
 /*
 .box1{}
-
 .box2{}
-
 .box3{}
-
 .box4{}
-
 .box5{}
-
 .box6{}
-
 .box7{}
-
 .box8{}
-
 .box9{}
-
 .box10{}
-
 .box11{}
-
 .box12{}
 */
 
@@ -292,10 +291,6 @@ label {
    align-items: right;
 }
 
-.h3 {
-   font-size: 25px;
-   line-height: 80px;
-}
 
 .MDG {
    font-size: 25px;
