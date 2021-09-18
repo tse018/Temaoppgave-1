@@ -1,6 +1,6 @@
 /* unique IDs for navigation purpose
 added padding and margin so section header
-will display little below navbar when clicked */
+will display little below navbar when clicked on */
 #section1 {
    padding: 80px 0 0;
    margin: -60px 0 0;
@@ -18,12 +18,12 @@ will display little below navbar when clicked */
    margin: -60px 0 0;
 }
 
+/* universal using elements throughout the website */
 .font-style {
    font-family: "Inter", sans-serif;
    font-family: "Montserrat", sans-serif;
 }
 
-/* applying same typography for all h2 and h3 elements */
 .h2 {
    padding: 5px 0 10px;
    font-size: 30px;
@@ -35,7 +35,21 @@ will display little below navbar when clicked */
    line-height: 80px;
 }
 
-/* MDG img with full-vw */
+.bold {
+   font-weight:bold;
+}
+
+/* using same decoration for all header elements */
+.header {
+   font-size: 35px;
+   width: 100%;
+   margin: 30px 0px;
+   padding: 0 170px;
+   background-color: rgb(118, 157, 43);
+   color: white;
+}
+
+/* Section - HERO-image */
 .full-img {
    position: relative;
    background-image: url("../assets/MDG_moto.png"); /* not sure this is good regarding screen-reader */
@@ -46,7 +60,6 @@ will display little below navbar when clicked */
    width: 100vw;
 }
 
-/* landscape img with 50% vw */
 .half-img {
    position: absolute;
    background-image: url("../assets/Natur.jpeg"); /* not sure this is good regarding screen-reader */
@@ -69,6 +82,13 @@ and sticked on top when scrolling */
    text-align: center;
 }
 
+/* MDG-logo on left-side navbar */
+.nav-logo {
+   float: left;
+   height: 100px;
+   margin: 0 0 0 50px;
+   padding: 0 0 0 50px;
+}
 /* styling navbar ul */
 .navbar-ul {
    margin: 0;
@@ -109,37 +129,18 @@ and sticked on top when scrolling */
    font-weight: bold;
 }
 
-/* MDG-logo on left-side navbar */
-.logo {
-   float: left;
-   height: 100px;
-   margin: 0 0 0 50px;
-   padding: 0 0 0 50px;
-}
-
-/* using same header decoration */
-.header {
-   font-size: 35px;
-   width: 100%;
-   margin: 30px 0px;
-   padding: 0 170px;
-   background-color: rgb(118, 157, 43);
-   color: white;
-}
-
-/* section politikk with flexbox  */
+/* Section - politikk */
 .flexbox-container {
    display: flex;
    flex-wrap: wrap;
+   justify-content: center;
    width: 100vw;
    min-height: 100vh;
-   justify-content: center;
    overflow: scroll; /* not required anymore, added min-height */
 }
 
 /* creating content boxes / flex-items */
 .flex-item {
-   position: relative;
    width: 25vw; /* each flex item will be 25 viewport */
    min-height: 50vh;
    margin: 10px 15px 25px;
@@ -151,15 +152,16 @@ and sticked on top when scrolling */
 }
 
 /* styling list elements inside flex-items */
-.flex-item li{
+.flex-item li {
    list-style: square inside;
 }
 
-.button{
-   margin:20px 5px 0 0;
+.les-mer {
+   margin: 20px 5px 0 0;
 }
 
-/* section om */
+
+/* section - om */
 .om {
    display: flex;
    justify-content: center;
@@ -168,13 +170,12 @@ and sticked on top when scrolling */
    height: 500px;
 }
 
-.flex-leftside {
+.flexbox-leftside {
    position: relative;
-   width: 35vw; /* each flex item will be 25 viewport */
+   width: 35vw; /* this flex item will be 35 viewport */
    height: 500px;
-   margin: 0 15px;
+   margin: 0 0 0 50px;
    font-size: 20px;
-   text-align: left;
 }
 
 .leftside-content {
@@ -185,12 +186,12 @@ and sticked on top when scrolling */
 
 .video {
    position: relative;
-   width: 65vw; /* each flex item will be 25 viewport */
+   width: 65vw; /* this flex item will be 65 viewport */
    height: 500px;
    margin: 0px 15px;
 }
 
-/* section styret */
+/* section - styret */
 .styret {
    width: 100vw;
    min-height: 100vh;
@@ -219,17 +220,14 @@ and sticked on top when scrolling */
 .box12{}
 */
 
-/* section bli-med */
+/* section - bli med */
 .bli-med {
    width: 100vw;
    min-height: 150vh;
    margin: 0 0 70px;
 }
 
-.form-container {
-   width: 100px;
-}
-
+/* form container */
 .fieldset {
    border: 10px solid rgba(118, 157, 43);
    display: block;
@@ -244,20 +242,34 @@ and sticked on top when scrolling */
    font-size: 30px;
 }
 
-/* styling form elements */
-input,
-select,
-textarea {
-   display: block;
-   padding: 5px;
-   margin: 10px;
-   width: 500px;
+.birthday-select{
+   display:inline-block;
+   width: 50px;
+   margin: 5px 0 20px 20px ;
 }
 
-label {
-   margin-left: 20px;
+.year-select{
+   display:inline-block;
+   width: 70px;
+   margin: 5px 0 20px 20px;
 }
 
+.gender-select {
+   width: 80px;
+   margin:5px 0 20px 20px;
+}
+
+.welcome-select {
+   width: 50px;
+   margin: 5px 0 20px 20px;
+}
+
+.submit-button {
+   width: 100px;
+   margin: 15px 10px 10px;
+}
+
+/* section - footer */
 .footer {
    width: 100vw;
    background-color: rgba(118, 157, 43, 0.8);
@@ -274,39 +286,53 @@ label {
    height: 50vh;
 }
 
-.flex-item1 {
+.footer-flex1 {
    width: 40vw;
    margin: 40px -10px 0;
 }
 
-.flex-item2 {
+.footer-flex2 {
    width: 30vw;
    padding: 20px 0 0;
    align-items: right;
 }
 
-.flex-item3 {
+.footer-flex3 {
    width: 30vw;
    padding: 20px 0 0;
    align-items: right;
 }
 
-
-.MDG {
+.MDG-footer {
    font-size: 25px;
    line-height: 80px;
    font-weight: bold;
 }
 
-.link-style {
+.footer-link {
    display: block;
    color: white;
    text-decoration: none;
 }
 
-.link-style:hover {
+.footer-link:hover {
    color: #de549b;
    background-color: white;
    font-weight: bold;
    width: 210px;
+}
+
+/* styling form elements */
+input,
+select,
+textarea {
+   display: block;
+   padding: 5px;
+   width: 300px;
+   margin: 5px 0 20px 20px;
+}
+
+label {
+   margin-left: 20px;
+   display: block;
 }

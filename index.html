@@ -19,7 +19,7 @@
 
       <!-- Sticky navigasjonsbar - lenke til ulike sections -->
       <nav class="navbar">
-         <img div class="logo"
+         <img div class="nav-logo"
          src="assets/MDG_logo.png" alt="MDG-logo">
          <ul class="navbar-ul">
             <li class="navbar-li"><a href="#top">Hjem</a></li>
@@ -47,7 +47,7 @@
                   <li>Redusere biltraffiken</li>
                   <li>ha som langsiktig mål å halvere det norske kjøttforbruket.</li>
                </ul>
-               <div class="button"><button>Les mer</button></div>
+               <div class="les-mer"><button>Les mer</button></div>
             </article>
 
             <article class="flex-item">
@@ -61,7 +61,7 @@
                      <li>Kutte kollektivprisene med 20 prosent.</li>
                      <li>Jobbe for trygge skoleveier, blant annet etablere bilfrie soner.</li>
                   </ul>
-                  <div class="button"><button>Les mer</button></div>
+                  <div class="les-mer"><button>Les mer</button></div>
             </article>
              
             <article class="flex-item">
@@ -73,7 +73,7 @@
                   <li>Opprettholde gode lokalsykehus som er tilpasset den medisinske utvikligen og behovet i lokalbefolkningen.</li>
                   <li>Gjennomføre et nasjonalt løft for tidlig innsats gjennom helsestasjoner og skolehelsetjenesten.</li>
                </ul>
-               <div class="button"><button>Les mer</button></div>
+               <div class="les-mer"><button>Les mer</button></div>
             </article>
 
             <article class="flex-item">
@@ -87,7 +87,7 @@
                   <li>Prioritere tiltak for barn og unge som er rusavhengige.</li>
                   <li>Øke kompetansen om rus i helsestasjons- og skolehelsetilbudet. </li>
                </ul>
-               <div class="button"><button>Les mer</button></div>
+               <div class="les-mer"><button>Les mer</button></div>
             </article>
              
             <article class="flex-item">
@@ -101,7 +101,7 @@
                   <li>Endre dagpengeordningen til også å omfatte nyutdannede personer som har mindre deltidsstillinger</li>
                   <li>Utrede ordninger for borgerlønn.</li>
                </ul>
-               <div class="button"><button>Les mer</button></div>
+               <div class="les-mer"><button>Les mer</button></div>
             </article>
 
             <article class="flex-item">
@@ -113,7 +113,7 @@
                      <li>Stenge Barenshavet sørøst for petrolsvirksomhet umiddelbar</li>
                      <li>Stille krav om nullutslippsløsninger fra kraftproduksjon</li>
                   </ul>
-                  <div class="button"><button>Les mer</button></div>
+                  <div class="les-mer"><button>Les mer</button></div>
             </article>
          </section>
 
@@ -121,7 +121,7 @@
          <div id="section2"></div>
          <header class="header">Om partiet</header>
          <section class ="om">
-            <div class="flex-leftside">
+            <div class="flexbox-leftside">
                <p class="leftside-content">I MDG har vi som utgangspunkt at mennesker
                   ikke er hevet over naturen, men at vi er en del av den.
                   Vi har tre grunnleggende solidaritetsprinsipper for all
@@ -237,7 +237,7 @@
                      required>
 
                   <label for="birthday">Fødselsdato:</label>
-                     <select name="date" id="birthday">
+                     <select class="birthday-select" name="date" id="birthday">
                         <option value="--">--</option>
                         <option value="1">01</option>
                         <option value="2">02</option>
@@ -272,7 +272,7 @@
                         <option value="31">31</option>
                      </select>
 
-                     <select name="month" id="birthday">
+                     <select class="birthday-select" name="month" id="birthday">
                         <option value="--">--</option>
                         <option value="1">01</option>
                         <option value="2">02</option>
@@ -288,7 +288,7 @@
                         <option value="12">12</option>
                      </select>
 
-                     <select name="year" id="birthday">
+                     <select class="year-select" name="year" id="birthday">
                         <option value="----">----</option>
                         <option value="2021">2021</option>
                         <option value="2020">2020</option>
@@ -371,7 +371,7 @@
                         required>
 
                      <label for="gender">Kjønn:</label>
-                     <select name="gender" id="gender">
+                     <select class="gender-select" name="gender" id="gender">
                         <option value="-------">-------</option>
                         <option value="mann">mann</option>
                         <option value="kvinne">kvinne</option>
@@ -387,17 +387,17 @@
                      </select>
 
                      <label for="welcome-mail">Ønsker du velkomstpakke tilsendt i posten?</label>
-                     <select name="welcome-mail" id="welcome">
+                     <select class="welcome-select" name="welcome-mail" id="welcome">
                         <option value="yes">Ja</option>
                         <option value="no">Nei</option>
                      </select>
 
                      <label for="participating">Ønsker du å engasjere deg som frivillig?</label>
-                     <select name="participating" id="participating">
+                     <select class="welcome-select" name="participating" id="participating">
                         <option value="yes">Ja</option>
                         <option value="no">Nei</option>
                      </select>
-                     <input type="submit" value="send data">
+                     <input class="submit-button" type="submit" value="send data">
                </fieldset>
                <fieldset class="fieldset">
                   <legend class="legend">Betaling</legend>
@@ -417,7 +417,7 @@
                      value=""
                      autocomplete="off"
                      required>
-                     <input type="submit" value="send data">
+                     <input class="submit-button" type="submit" value="send data">
                </fieldset>
             </form>
          </section>
@@ -426,12 +426,12 @@
       <!-- Footer / bunntekst -->
       <footer class="footer">
          <div class="footer-container">
-            <div class="flex-item1">
-               <img div class="logo"
+            <div class="footer-flex1">
+               <img div class="nav-logo"
                src="assets/MDG_logo.png" alt="MDG-logo">
             </div>
-            <div class="flex-item2">
-               <h3 class="MDG">Miljøpartiet De Grønne</h3>
+            <div class="footer-flex2">
+               <h3 class="MDG-footer">Miljøpartiet De Grønne</h3>
                <p>Hausmanns gate 19, 0182 Oslo</p>
                <p>E-post: mdg@mdg.no</p>
                <p>Telefon: 23 69 94 11</p>
@@ -440,10 +440,10 @@
                <p>Vipps-nummer: 13124</p>
             </div>
 
-            <div class="flex-item3">
+            <div class="footer-flex3">
                <h3 class="h3">Mer info</h3>
-                  <a class="link-style" href="https://www.mdg.no/kontakt" target="_blank">Kontakt oss</a>
-                  <a class="link-style" href="https://www.mdg.no/personvern_og_informasjonskapsler" target="_blank">Personvernerklæring</a>
+                  <a class="footer-link" href="https://www.mdg.no/kontakt" target="_blank">Kontakt oss</a>
+                  <a class="footer-link" href="https://www.mdg.no/personvern_og_informasjonskapsler" target="_blank">Personvernerklæring</a>
                </div>
             </div>
          </div>
