@@ -36,7 +36,7 @@ will display little below navbar when clicked on */
 }
 
 .bold {
-   font-weight:bold;
+   font-weight: bold;
 }
 
 /* using same decoration for all header elements */
@@ -160,7 +160,6 @@ and sticked on top when scrolling */
    margin: 20px 5px 0 0;
 }
 
-
 /* section - om */
 .om {
    display: flex;
@@ -242,31 +241,41 @@ and sticked on top when scrolling */
    font-size: 30px;
 }
 
-.birthday-select{
-   display:inline-block;
+.select-birthday {
+   display: inline-block;
    width: 50px;
-   margin: 5px 0 20px 20px ;
+   margin: 5px -20px 20px 20px;
 }
 
-.year-select{
-   display:inline-block;
+.select-year {
+   display: inline-block;
    width: 70px;
-   margin: 5px 0 20px 20px;
+   margin: 5px -20px 20px 20px;
 }
 
-.gender-select {
-   width: 80px;
-   margin:5px 0 20px 20px;
+.select-membership {
+   width: 250px;
 }
 
-.welcome-select {
-   width: 50px;
-   margin: 5px 0 20px 20px;
+.select-gender {
+   width: 110px;
+}
+
+.select-welcome {
+   width: 60px;
+}
+
+.select-card {
+   width: 120px;
+}
+
+.card-number {
+   width: 200px;
 }
 
 .submit-button {
    width: 100px;
-   margin: 15px 10px 10px;
+   margin: 5px 0 20px 20px;
 }
 
 /* section - footer */

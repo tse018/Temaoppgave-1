@@ -237,7 +237,7 @@
                      required>
 
                   <label for="birthday">Fødselsdato:</label>
-                     <select class="birthday-select" name="date" id="birthday">
+                     <select class="select-birthday" name="date" id="birthday">
                         <option value="--">--</option>
                         <option value="1">01</option>
                         <option value="2">02</option>
@@ -272,7 +272,7 @@
                         <option value="31">31</option>
                      </select>
 
-                     <select class="birthday-select" name="month" id="birthday">
+                     <select class="select-birthday" name="month" id="birthday">
                         <option value="--">--</option>
                         <option value="1">01</option>
                         <option value="2">02</option>
@@ -288,7 +288,7 @@
                         <option value="12">12</option>
                      </select>
 
-                     <select class="year-select" name="year" id="birthday">
+                     <select class="select-year" name="year" id="birthday">
                         <option value="----">----</option>
                         <option value="2021">2021</option>
                         <option value="2020">2020</option>
@@ -371,8 +371,8 @@
                         required>
 
                      <label for="gender">Kjønn:</label>
-                     <select class="gender-select" name="gender" id="gender">
-                        <option value="-------">-------</option>
+                     <select class="select-gender" name="gender" id="gender">
+                        <option value="---------">---------</option>
                         <option value="mann">mann</option>
                         <option value="kvinne">kvinne</option>
                         <option value="udefinert">udefinert</option>
@@ -380,44 +380,44 @@
                      </select>
 
                      <label for="membership">Type medlemsskap:</label>
-                     <select name="membership" id="membership">
+                     <select class="select-membership" name="membership" id="membership">
                         <option value="regular">Ordinær kontingent (450,-)</option>
                         <option value="reduced">Redusert kontingent (150,-)</option>
                         <option value="highest">Høy kontingent (950,-) </option>
                      </select>
 
                      <label for="welcome-mail">Ønsker du velkomstpakke tilsendt i posten?</label>
-                     <select class="welcome-select" name="welcome-mail" id="welcome">
+                     <select class="select-welcome" name="welcome-mail" id="welcome">
                         <option value="yes">Ja</option>
                         <option value="no">Nei</option>
                      </select>
 
                      <label for="participating">Ønsker du å engasjere deg som frivillig?</label>
-                     <select class="welcome-select" name="participating" id="participating">
+                     <select class="select-welcome" name="participating" id="participating">
                         <option value="yes">Ja</option>
                         <option value="no">Nei</option>
                      </select>
-                     <input class="submit-button" type="submit" value="send data">
+                     <input class="submit-button" type="submit" value="Send data">
                </fieldset>
                <fieldset class="fieldset">
                   <legend class="legend">Betaling</legend>
                   <label for="credit-card">Kredittkort</label>
-                  <select name="credit-card">
-                     <option value="visa">Visa</option>
+                  <select class="select-card" name="credit-card">
                      <option value="mastercard">Mastercard</option>
+                     <option value="visa">Visa</option>
                      <option value="paypal">PayPal</option>
                   </select>
 
 
                   <label for="card-number">Kredittkortnummer:</label>
-                  <input
+                  <input class="card-number"
                      type="text"
                      name="card-number"
                      placeholder="0000 0000 0000 0000"
                      value=""
                      autocomplete="off"
                      required>
-                     <input class="submit-button" type="submit" value="send data">
+                     <input class="submit-button" type="submit" value="Send data">
                </fieldset>
             </form>
          </section>
