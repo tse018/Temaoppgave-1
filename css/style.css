@@ -1,27 +1,35 @@
 /* unique IDs for navigation purpose
 added padding and margin so section header
 will display little below navbar when clicked on */
-#section1 {
+#politikk {
    padding: 80px 0 0;
    margin: -60px 0 0;
 }
-#section2 {
+#om {
    padding: 80px 0 0;
    margin: -60px 0 0;
 }
-#section3 {
+#styret {
    padding: 80px 0 0;
    margin: -60px 0 0;
 }
-#section4 {
+#bli-med {
    padding: 80px 0 0;
    margin: -60px 0 0;
 }
 
 /* universal using elements throughout the website */
 .font-style {
-   font-family: "Inter", sans-serif;
    font-family: "Montserrat", sans-serif;
+}
+
+.header-layout {
+   font-size: 35px;
+   width: 100%;
+   margin: 30px 0px;
+   padding: 0 170px;
+   background-color: rgb(118, 157, 43);
+   color: white;
 }
 
 .h2 {
@@ -39,17 +47,7 @@ will display little below navbar when clicked on */
    font-weight: bold;
 }
 
-/* using same decoration for all header elements */
-.header {
-   font-size: 35px;
-   width: 100%;
-   margin: 30px 0px;
-   padding: 0 170px;
-   background-color: rgb(118, 157, 43);
-   color: white;
-}
-
-/* Section - HERO-image */
+/******** HERO-section *********/
 .full-img {
    position: relative;
    background-image: url("../assets/MDG_moto.png"); /* not sure this is good regarding screen-reader */
@@ -62,7 +60,7 @@ will display little below navbar when clicked on */
 
 .half-img {
    position: absolute;
-   background-image: url("../assets/Natur.jpeg"); /* not sure this is good regarding screen-reader */
+   background-image: url("../assets/Natur.jpeg");
    background-position: left;
    background-repeat: no-repeat;
    background-size: cover;
@@ -70,28 +68,27 @@ will display little below navbar when clicked on */
    width: 50vw;
 }
 
-/* navbar - always below hero-img header
-and sticked on top when scrolling */
+/******* Navbar ********/
+/* always below hero-img and fixed on top when scrolling */
 .navbar {
    position: sticky;
    top: 0;
    height: 100px;
    width: 100vw;
-   z-index: 1;
+   z-index: 1; /* makes it so the navbar isn´t covered during scrolling */
    background-color: rgba(118, 157, 43, 0.8);
    text-align: center;
 }
 
-/* MDG-logo on left-side navbar */
-.nav-logo {
-   float: left;
+.mdg-logo {
+   float: left; /* placing image on left side */
    height: 100px;
    margin: 0 0 0 50px;
    padding: 0 0 0 50px;
 }
+
 /* styling navbar ul */
 .navbar-ul {
-   margin: 0;
    padding: 20px 0;
 }
 
@@ -129,7 +126,7 @@ and sticked on top when scrolling */
    font-weight: bold;
 }
 
-/* Section - politikk */
+/********* Section - politikk **********/
 .flexbox-container {
    display: flex;
    flex-wrap: wrap;
@@ -156,22 +153,15 @@ and sticked on top when scrolling */
    list-style: square inside;
 }
 
-.les-mer {
-   margin: 20px 5px 0 0;
-}
-
-/* section - om */
+/********* section - om *************/
 .om {
    display: flex;
-   justify-content: center;
-   align-items: center;
    width: 100vw;
    height: 500px;
 }
 
 .flexbox-leftside {
-   position: relative;
-   width: 35vw; /* this flex item will be 35 viewport */
+   width: 35vw;
    height: 500px;
    margin: 0 0 0 50px;
    font-size: 20px;
@@ -183,34 +173,22 @@ and sticked on top when scrolling */
    line-height: 2;
 }
 
-.video {
-   position: relative;
+.flexbox-video {
    width: 65vw; /* this flex item will be 65 viewport */
    height: 500px;
    margin: 0px 15px;
 }
 
-/* section - styret */
-.styret {
-   width: 100vw;
-   min-height: 100vh;
-   padding: 0 0 50px;
-}
-
+/****** Section styret *******/
 .wrapper {
    display: grid;
    grid-template-columns: repeat(3, 1fr);
    grid-template-rows: 1fr;
    grid-gap: 20px;
+   width: 100%;
 }
 
-/* section - bli med */
-.bli-med {
-   width: 100vw;
-   min-height: 150vh;
-   margin: 0 0 70px;
-}
-
+/********* section - bli med form ***********/
 /* form container */
 .fieldset {
    border: 10px solid rgba(118, 157, 43);
@@ -259,25 +237,22 @@ and sticked on top when scrolling */
 }
 
 .submit-button {
+   display: block;
    width: 100px;
    margin: 5px 0 20px 20px;
 }
 
-/* section - footer */
-.footer {
-   width: 100vw;
-   background-color: rgba(118, 157, 43, 0.8);
-   color: white;
-   font-size: 20px;
-   text-align: left;
-}
-
+/******* section - footer *********/
 .footer-container {
    border: 10px solid;
    display: flex;
    flex-wrap: wrap;
    width: 100vw;
-   height: 50vh;
+   height: 400px;
+   background-color: rgba(118, 157, 43, 0.8);
+   color: white;
+   font-size: 20px;
+   text-align: left;
 }
 
 .footer-flex1 {
@@ -291,22 +266,23 @@ and sticked on top when scrolling */
    align-items: right;
 }
 
+.text-footer {
+   font-size: 25px;
+   line-height: 80px;
+   font-weight: bold;
+}
+
 .footer-flex3 {
    width: 30vw;
    padding: 20px 0 0;
    align-items: right;
 }
 
-.MDG-footer {
-   font-size: 25px;
-   line-height: 80px;
-   font-weight: bold;
-}
-
 .footer-link {
    display: block;
    color: white;
-   text-decoration: none;
+   text-decoration: underline;
+   margin: 10px 0 0;
 }
 
 .footer-link:hover {
@@ -318,15 +294,13 @@ and sticked on top when scrolling */
 
 /* styling form elements */
 input,
-select,
-textarea {
-   display: block;
+select {
    padding: 5px;
    width: 300px;
    margin: 5px 0 20px 20px;
 }
 
 label {
-   margin-left: 20px;
    display: block;
+   margin-left: 20px;
 }

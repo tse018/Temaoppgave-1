@@ -5,63 +5,88 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Temaoppgave1</title>
       <link rel="stylesheet" href="css/reset.css" />
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Montserrat:wght@300&display=swap"
+         rel="stylesheet"
+      />
       <link rel="stylesheet" href="css/style.css" />
    </head>
 
    <body class="font-style">
-      <!-- full hero-vw /vh image -->
+      <!-- full hero / half hero image -->
       <header class="full-img">
+         <div aria-label="Miljøpartiet de grønne, for menneske og klima"></div>
          <div class="half-img"></div>
+         <div aria-label="bilde av et norsk landsby"></div>
       </header>
 
       <!-- Sticky navigasjonsbar - lenke til ulike sections -->
       <nav class="navbar">
-         <img div class="nav-logo"
-         src="assets/MDG_logo.png" alt="MDG-logo">
+         <img div class="mdg-logo" src="assets/MDG_logo.png" alt="MDG-logo" />
          <ul class="navbar-ul">
             <li class="navbar-li"><a href="#top">Hjem</a></li>
-            <li class="navbar-li"><a href="#section1">Politikk</a></li>
-            <li class="navbar-li"><a href="#section2">Om</a></li>
-            <li class="navbar-li"><a href="#section3">Styret</a></li>
-            <li class="navbar-li"><a href="#section4">Bli med</a></li>
+            <li class="navbar-li"><a href="#politikk">Politikk</a></li>
+            <li class="navbar-li"><a href="#om">Om</a></li>
+            <li class="navbar-li"><a href="#styret">Styret</a></li>
+            <li class="navbar-li"><a href="#bli-med">Bli med</a></li>
          </ul>
       </nav>
 
-      <!-- Section1 - Politikk -->
+      <!--  Section1 - Politikk  -->
       <main>
-         <div id="section1"></div>
-         <header class="header">Politikkområde</header>
+         <div id="politikk"></div>
+         <header class="header-layout">Politikkområde</header>
          <section class="flexbox-container">
             <article class="flex-item">
                <h2 class="h2">Klimapolitikk</h2>
                <p>Vi vil:</p>
                <ul>
                   <li>Redusere utslipp av klimagasser.</li>
-                  <li>Stanse åpning av nye og utvidelse av eksisterende olje- og gassfelt.</li>
+                  <li>
+                     Stanse åpning av nye og utvidelse av eksisterende olje- og
+                     gassfelt.
+                  </li>
                   <li>Innføre ordning med klimabelønning (karbonavgift).</li>
-                  <li>Fase ut salg av nye fossile personbiler og motorsykler.</li>
+                  <li>
+                     Fase ut salg av nye fossile personbiler og motorsykler.
+                  </li>
                   <li>Gi gode skattevilkår til grønne næringer.</li>
                   <li>Redusere biltraffiken</li>
-                  <li>ha som langsiktig mål å halvere det norske kjøttforbruket.</li>
+                  <li>
+                     ha som langsiktig mål å halvere det norske kjøttforbruket.
+                  </li>
                </ul>
-               <div class="les-mer"><button>Les mer</button></div>
+                  <button aria-label="les mer om klimapolitikk"></div>Les mer</button>
+               </div>
             </article>
 
             <article class="flex-item">
                <h2 class="h2">Bypolitikk</h2>
                <p>Derfor vil vi blant annet:</p>
-                  <ul>
-                     <li>Gjøre det tryggere og enklere å sykle og gå ved å etablere gang- og sykkelveinett.</li>
-                     <li>Redusere biltrafikken i og rundt de større byene.</li>
-                     <li>Gjenåpne bekker og vassdrag for å takle klimaendringer og økt nedbør.</li>
-                     <li>skape levende bysentrum med plass til lekeplasser, parker og kultur.</li>
-                     <li>Kutte kollektivprisene med 20 prosent.</li>
-                     <li>Jobbe for trygge skoleveier, blant annet etablere bilfrie soner.</li>
-                  </ul>
-                  <div class="les-mer"><button>Les mer</button></div>
+               <ul>
+                  <li>
+                     Gjøre det tryggere og enklere å sykle og gå ved å etablere
+                     gang- og sykkelveinett.
+                  </li>
+                  <li>Redusere biltrafikken i og rundt de større byene.</li>
+                  <li>
+                     Gjenåpne bekker og vassdrag for å takle klimaendringer og
+                     økt nedbør.
+                  </li>
+                  <li>
+                     skape levende bysentrum med plass til lekeplasser, parker
+                     og kultur.
+                  </li>
+                  <li>Kutte kollektivprisene med 20 prosent.</li>
+                  <li>
+                     Jobbe for trygge skoleveier, blant annet etablere bilfrie
+                     soner.
+                  </li>
+               </ul>
+                  <button aria-label="les mer om bypolitikk">Les mer</button>
+               </div>
             </article>
              
             <article class="flex-item">
@@ -69,72 +94,117 @@
                <p>Vi vil:</p>
                <ul>
                   <li>Styrke fastlegeordningen gjennom økt rekruttering.</li>
-                  <li>Fjerne straff for bruk og besittelse av brukerdoser i tråd med Rusreformutvalgets anbefaling.</li>
-                  <li>Opprettholde gode lokalsykehus som er tilpasset den medisinske utvikligen og behovet i lokalbefolkningen.</li>
-                  <li>Gjennomføre et nasjonalt løft for tidlig innsats gjennom helsestasjoner og skolehelsetjenesten.</li>
+                  <li>
+                     Fjerne straff for bruk og besittelse av brukerdoser i tråd
+                     med Rusreformutvalgets anbefaling.
+                  </li>
+                  <li>
+                     Opprettholde gode lokalsykehus som er tilpasset den
+                     medisinske utvikligen og behovet i lokalbefolkningen.
+                  </li>
+                  <li>
+                     Gjennomføre et nasjonalt løft for tidlig innsats gjennom
+                     helsestasjoner og skolehelsetjenesten.
+                  </li>
                </ul>
-               <div class="les-mer"><button>Les mer</button></div>
+               <button aria-label="les mer om helse og omsorg">Les mer</button>
+               </div>
             </article>
 
             <article class="flex-item">
                <h2 class="h2">Ruspolitikk</h2>
                <p>Vi vil blant annet:</p>
                <ul>
-                  <li>I tråd med Rusreformutvalget fjerne straff for bruk og besittelse av brukerdoser.</li>
+                  <li>
+                     I tråd med Rusreformutvalget fjerne straff for bruk og
+                     besittelse av brukerdoser.
+                  </li>
                   <li>Legalisere bruk og regulert omsetning av cannabis.</li>
                   <li>Videreføre en restriktiv alkoholpolitikk.</li>
-                  <li>Legge til rette for et godt samarbeid mellom skoler og helsesktoren.</li>
-                  <li>Prioritere tiltak for barn og unge som er rusavhengige.</li>
-                  <li>Øke kompetansen om rus i helsestasjons- og skolehelsetilbudet. </li>
+                  <li>
+                     Legge til rette for et godt samarbeid mellom skoler og
+                     helsesktoren.
+                  </li>
+                  <li>
+                     Prioritere tiltak for barn og unge som er rusavhengige.
+                  </li>
+                  <li>
+                     Øke kompetansen om rus i helsestasjons- og
+                     skolehelsetilbudet.
+                  </li>
                </ul>
-               <div class="les-mer"><button>Les mer</button></div>
+               <button aria-label="les mer om ruspolitikk">Les mer</button>
+               </div>
             </article>
              
             <article class="flex-item">
                <h2 class="h2">Sosialrettferdighet</h2>
                <p>Vi vil blant annet:</p>
                <ul>
-                  <li>At folk med lav og gjennomsnittlig inntekst skal få redusert inntektsskatt.</li>
+                  <li>
+                     At folk med lav og gjennomsnittlig inntekst skal få
+                     redusert inntektsskatt.
+                  </li>
                   <li>Folk med høy inntekt skal betale mer i skatt.</li>
-                  <li>Styrke velferdsrettighetene til selvstendig næringsdrivende.</li>
-                  <li>Verne om universelle velferdstjenester som barnetrygd.</li>
-                  <li>Endre dagpengeordningen til også å omfatte nyutdannede personer som har mindre deltidsstillinger</li>
+                  <li>
+                     Styrke velferdsrettighetene til selvstendig
+                     næringsdrivende.
+                  </li>
+                  <li>
+                     Verne om universelle velferdstjenester som barnetrygd.
+                  </li>
+                  <li>
+                     Endre dagpengeordningen til også å omfatte nyutdannede
+                     personer som har mindre deltidsstillinger
+                  </li>
                   <li>Utrede ordninger for borgerlønn.</li>
                </ul>
-               <div class="les-mer"><button>Les mer</button></div>
+               <button aria-label="les mer om sosialrettferdighet">Les mer</button>
+               </div>
             </article>
 
             <article class="flex-item">
                <h2 class="h2">Utfasing av olje</h2>
                <p>MDG vil:</p>
-                  <ul>
-                     <li>Kreve full stans i leting og utvidelser av eksisterende felt på sokkelen.</li>
-                     <li>Gjennomføre en gradvis, forutsigbar og planmessig utfasing av petroleumsvirksomheten innen 2035.</li>
-                     <li>Stenge Barenshavet sørøst for petrolsvirksomhet umiddelbar</li>
-                     <li>Stille krav om nullutslippsløsninger fra kraftproduksjon</li>
-                  </ul>
-                  <div class="les-mer"><button>Les mer</button></div>
+               <ul>
+                  <li>
+                     Kreve full stans i leting og utvidelser av eksisterende
+                     felt på sokkelen.
+                  </li>
+                  <li>
+                     Gjennomføre en gradvis, forutsigbar og planmessig utfasing
+                     av petroleumsvirksomheten innen 2035.
+                  </li>
+                  <li>
+                     Stenge Barenshavet sørøst for petrolsvirksomhet umiddelbar
+                  </li>
+                  <li>
+                     Stille krav om nullutslippsløsninger fra kraftproduksjon
+                  </li>
+               </ul>
+               <button aria-label="les mer om utfasing av olje">Les mer</button>
+               </div>
             </article>
          </section>
 
          <!-- Section2 - Om MDG -->
-         <div id="section2"></div>
-         <header class="header">Om partiet</header>
-         <section class ="om">
+         <div id="om"></div>
+         <header class="header-layout">Om partiet</header>
+         <section class="om">
             <div class="flexbox-leftside">
-               <p class="leftside-content">I MDG har vi som utgangspunkt at mennesker
-                  ikke er hevet over naturen, men at vi er en del av den.
-                  Vi har tre grunnleggende solidaritetsprinsipper for all
-                  vår politikk: solidaritet med andre mennesker,
-                  fremtidige generasjoner, og dyr og natur.
-                  Vi er en del av en internasjonal,
-                  grønn grasrotbevegelse med et globalt perspektiv.
-                  Sosial rettferdighet for alle, uavhengig av klasse,
-                  legning eller hudfarge er sentrale verdier.
+               <p class="leftside-content">
+                  I MDG har vi som utgangspunkt at mennesker ikke er hevet over
+                  naturen, men at vi er en del av den. Vi har tre grunnleggende
+                  solidaritetsprinsipper for all vår politikk: solidaritet med
+                  andre mennesker, fremtidige generasjoner, og dyr og natur. Vi
+                  er en del av en internasjonal, grønn grasrotbevegelse med et
+                  globalt perspektiv. Sosial rettferdighet for alle, uavhengig
+                  av klasse, legning eller hudfarge er sentrale verdier.
                </p>
             </div>
 
-            <iframe class="video"
+            <iframe
+               class="flexbox-video"
                src="https://www.youtube.com/embed/ZA7Sppg1-oQ"
                title="En framtid du gleder deg til"
                name="MDG video"
@@ -143,60 +213,95 @@
                allow="accelerometer;
                autoplay;
                clipboard-write;
-               encrypted-media;                        gyroscope;
+               encrypted-media;
+               gyroscope;
                picture-in-picture"
-               allowfullscreen>
+               allowfullscreen
+            >
             </iframe>
          </section>
 
          <!-- Section3 - Styret -->
-         <div id="section3"></div>
-         <header class="header">Politikere</header>
-         <section class="styret">
-            <div class="wrapper">
-               <img class="box1"
-               src="assets/list-UneBastholm.jpg" alt="Une Bastholm">
+         <div id="styret"></div>
+         <header class="header-layout">Politikere</header>
+         <section class="wrapper">
+            <img
+               class="box1"
+               src="assets/list-UneBastholm.jpg"
+               alt="Une Bastholm"
+            />
 
-               <img class="box2"
-               src="assets/list-ArildHermstad.jpg" alt="Arild Hermstad">
+            <img
+               class="box2"
+               src="assets/list-ArildHermstad.jpg"
+               alt="Arild Hermstad"
+            />
 
-               <img class="box3"
-               src="assets/list-KrissRokkanIversen.jpg" alt="Kriss Rokkan Iversen">
+            <img
+               class="box3"
+               src="assets/list-KrissRokkanIversen.jpg"
+               alt="Kriss Rokkan Iversen"
+            />
 
-               <img class="box4"
-               src="assets/list-OdaSofiePettersen.jpeg" alt="Oda Sofie Pettersen">
+            <img
+               class="box4"
+               src="assets/list-OdaSofiePettersen.jpeg"
+               alt="Oda Sofie Pettersen"
+            />
 
-               <img class="box5"
-               src="assets/list-lan_marie_berg.png" alt="Lan Marie">
+            <img
+               class="box5"
+               src="assets/list-lan_marie_berg.png"
+               alt="Lan Marie"
+            />
 
-               <img class="box6"
-               src="assets/list-AskIbsenLindal.jpeg" alt="Ibsen Lindal">
+            <img
+               class="box6"
+               src="assets/list-AskIbsenLindal.jpeg"
+               alt="Ibsen Lindal"
+            />
 
-               <img class="box7"
-               src="assets/list-FaridShariati.jpeg" alt="Farid Shariati">
+            <img
+               class="box7"
+               src="assets/list-FaridShariati.jpeg"
+               alt="Farid Shariati"
+            />
 
-               <img class="box8"
-               src="assets/list-MargitFausko.jpeg" alt="Margit Fausko">
+            <img
+               class="box8"
+               src="assets/list-MargitFausko.jpeg"
+               alt="Margit Fausko"
+            />
 
-               <img class="box9"
-               src="assets/list-ThomasJohansen.jpeg" alt="Thomas Johansen">
+            <img
+               class="box9"
+               src="assets/list-ThomasJohansen.jpeg"
+               alt="Thomas Johansen"
+            />
 
-               <img class="box10"
-               src="assets/list-MariusDalin.jpeg" alt="Marius Dalin">
+            <img
+               class="box10"
+               src="assets/list-MariusDalin.jpeg"
+               alt="Marius Dalin"
+            />
 
-               <img class="box11"
-               src="assets/list-UlrikkeTorgersen.jpeg" alt="Ulrikke Torgersen">
+            <img
+               class="box11"
+               src="assets/list-UlrikkeTorgersen.jpeg"
+               alt="Ulrikke Torgersen"
+            />
 
-               <img class="box12"
-               src="assets/list-CarlJohansen.jpeg" alt="Carl Johansen">
-            </div>
+            <img
+               class="box12"
+               src="assets/list-CarlJohansen.jpeg"
+               alt="Carl Johansen"
+            />
          </section>
 
-
-         <!-- Section4 - Bli-med skjema / forms -->
-         <div id="section4"></div>
-         <header class="header"> Bli med</header>
-         <section class="bli-med">
+         <!-- Section4 - Bli-med form -->
+         <div id="bli-med"></div>
+         <header class="header-layout">Bli med</header>
+         <section>
             <form action="result.html" method="GET">
                <fieldset class="fieldset">
                   <legend class="legend">Innmeldingsskjema</legend>
@@ -207,7 +312,8 @@
                      id="firstame"
                      value=""
                      autocomplete="on"
-                     required>
+                     required
+                  />
 
                   <label for="lastname">Etternavn:</label>
                   <input
@@ -216,7 +322,8 @@
                      id="lastname"
                      value=""
                      autocomplete="on"
-                     required>
+                     required
+                  />
 
                   <label for="address">Addresse:</label>
                   <input
@@ -225,7 +332,8 @@
                      id="address"
                      value=""
                      autocomplete="on"
-                     required>
+                     required
+                  />
 
                   <label for="postnumber">Postnummer:</label>
                   <input
@@ -234,170 +342,195 @@
                      id="postnumber"
                      value=""
                      autocomplete="on"
-                     required>
+                     required
+                  />
 
                   <label for="birthday">Fødselsdato:</label>
-                     <select class="select-birthday" name="date" id="birthday">
-                        <option value="--">--</option>
-                        <option value="1">01</option>
-                        <option value="2">02</option>
-                        <option value="3">03</option>
-                        <option value="4">04</option>
-                        <option value="5">05</option>
-                        <option value="6">06</option>
-                        <option value="7">07</option>
-                        <option value="8">08</option>
-                        <option value="9">09</option>
-                        <option value="10">10</option>
-                        <option value="11">11</option>
-                        <option value="12">12</option>
-                        <option value="13">13</option>
-                        <option value="14">14</option>
-                        <option value="15">15</option>
-                        <option value="16">16</option>
-                        <option value="17">17</option>
-                        <option value="18">18</option>
-                        <option value="19">19</option>
-                        <option value="20">20</option>
-                        <option value="21">21</option>
-                        <option value="22">22</option>
-                        <option value="23">23</option>
-                        <option value="24">24</option>
-                        <option value="25">25</option>
-                        <option value="26">26</option>
-                        <option value="27">27</option>
-                        <option value="28">28</option>
-                        <option value="29">29</option>
-                        <option value="30">30</option>
-                        <option value="31">31</option>
-                     </select>
+                  <select class="select-birthday" name="date" id="birthday">
+                     <option value="--">--</option>
+                     <option value="1">01</option>
+                     <option value="2">02</option>
+                     <option value="3">03</option>
+                     <option value="4">04</option>
+                     <option value="5">05</option>
+                     <option value="6">06</option>
+                     <option value="7">07</option>
+                     <option value="8">08</option>
+                     <option value="9">09</option>
+                     <option value="10">10</option>
+                     <option value="11">11</option>
+                     <option value="12">12</option>
+                     <option value="13">13</option>
+                     <option value="14">14</option>
+                     <option value="15">15</option>
+                     <option value="16">16</option>
+                     <option value="17">17</option>
+                     <option value="18">18</option>
+                     <option value="19">19</option>
+                     <option value="20">20</option>
+                     <option value="21">21</option>
+                     <option value="22">22</option>
+                     <option value="23">23</option>
+                     <option value="24">24</option>
+                     <option value="25">25</option>
+                     <option value="26">26</option>
+                     <option value="27">27</option>
+                     <option value="28">28</option>
+                     <option value="29">29</option>
+                     <option value="30">30</option>
+                     <option value="31">31</option>
+                  </select>
 
-                     <select class="select-birthday" name="month" id="birthday">
-                        <option value="--">--</option>
-                        <option value="1">01</option>
-                        <option value="2">02</option>
-                        <option value="3">03</option>
-                        <option value="4">04</option>
-                        <option value="5">05</option>
-                        <option value="6">06</option>
-                        <option value="7">07</option>
-                        <option value="8">08</option>
-                        <option value="9">09</option>
-                        <option value="10">10</option>
-                        <option value="11">11</option>
-                        <option value="12">12</option>
-                     </select>
+                  <select class="select-birthday" name="month" id="birthday">
+                     <option value="--">--</option>
+                     <option value="1">01</option>
+                     <option value="2">02</option>
+                     <option value="3">03</option>
+                     <option value="4">04</option>
+                     <option value="5">05</option>
+                     <option value="6">06</option>
+                     <option value="7">07</option>
+                     <option value="8">08</option>
+                     <option value="9">09</option>
+                     <option value="10">10</option>
+                     <option value="11">11</option>
+                     <option value="12">12</option>
+                  </select>
 
-                     <select class="select-year" name="year" id="birthday">
-                        <option value="----">----</option>
-                        <option value="2021">2021</option>
-                        <option value="2020">2020</option>
-                        <option value="2019">2019</option>
-                        <option value="2018">2018</option>
-                        <option value="2017">2017</option>
-                        <option value="2016">2016</option>
-                        <option value="2015">2015</option>
-                        <option value="2014">2014</option>
-                        <option value="2013">2013</option>
-                        <option value="2012">2012</option>
-                        <option value="2011">2011</option>
-                        <option value="2010">2010</option>
-                        <option value="2009">2009</option>
-                        <option value="2008">2008</option>
-                        <option value="2007">2007</option>
-                        <option value="2006">2006</option>
-                        <option value="2005">2005</option>
-                        <option value="2004">2004</option>
-                        <option value="2003">2003</option>
-                        <option value="2002">2002</option>
-                        <option value="2001">2001</option>
-                        <option value="2000">2000</option>
-                        <option value="1999">1999</option>
-                        <option value="1998">1998</option>
-                        <option value="1997">1997</option>
-                        <option value="1996">1996</option>
-                        <option value="1995">1995</option>
-                        <option value="1994">1994</option>
-                        <option value="1993">1993</option>
-                        <option value="1992">1992</option>
-                        <option value="1991">1991</option>
-                        <option value="1990">1990</option>
-                        <option value="1989">1989</option>
-                        <option value="1988">1988</option>
-                        <option value="1987">1987</option>
-                        <option value="1986">1986</option>
-                        <option value="1985">1985</option>
-                        <option value="1984">1984</option>
-                        <option value="1983">1983</option>
-                        <option value="1982">1982</option>
-                        <option value="1981">1981</option>
-                        <option value="1980">1980</option>
-                        <option value="1979">1979</option>
-                        <option value="1978">1978</option>
-                        <option value="1977">1977</option>
-                        <option value="1976">1976</option>
-                        <option value="1975">1975</option>
-                        <option value="1974">1974</option>
-                        <option value="1973">1973</option>
-                        <option value="1972">1972</option>
-                        <option value="1971">1971</option>
-                        <option value="1970">1970</option>
-                        <option value="1969">1969</option>
-                        <option value="1968">1968</option>
-                        <option value="1967">1967</option>
-                        <option value="1966">1966</option>
-                        <option value="1965">1965</option>
-                        <option value="1964">1964</option>
-                        <option value="1963">1963</option>
-                        <option value="1962">1962</option>
-                        <option value="1961">1961</option>
-                        <option value="1960">1960</option>
-                     </select>
+                  <select class="select-year" name="year" id="birthday">
+                     <option value="----">----</option>
+                     <option value="2021">2021</option>
+                     <option value="2020">2020</option>
+                     <option value="2019">2019</option>
+                     <option value="2018">2018</option>
+                     <option value="2017">2017</option>
+                     <option value="2016">2016</option>
+                     <option value="2015">2015</option>
+                     <option value="2014">2014</option>
+                     <option value="2013">2013</option>
+                     <option value="2012">2012</option>
+                     <option value="2011">2011</option>
+                     <option value="2010">2010</option>
+                     <option value="2009">2009</option>
+                     <option value="2008">2008</option>
+                     <option value="2007">2007</option>
+                     <option value="2006">2006</option>
+                     <option value="2005">2005</option>
+                     <option value="2004">2004</option>
+                     <option value="2003">2003</option>
+                     <option value="2002">2002</option>
+                     <option value="2001">2001</option>
+                     <option value="2000">2000</option>
+                     <option value="1999">1999</option>
+                     <option value="1998">1998</option>
+                     <option value="1997">1997</option>
+                     <option value="1996">1996</option>
+                     <option value="1995">1995</option>
+                     <option value="1994">1994</option>
+                     <option value="1993">1993</option>
+                     <option value="1992">1992</option>
+                     <option value="1991">1991</option>
+                     <option value="1990">1990</option>
+                     <option value="1989">1989</option>
+                     <option value="1988">1988</option>
+                     <option value="1987">1987</option>
+                     <option value="1986">1986</option>
+                     <option value="1985">1985</option>
+                     <option value="1984">1984</option>
+                     <option value="1983">1983</option>
+                     <option value="1982">1982</option>
+                     <option value="1981">1981</option>
+                     <option value="1980">1980</option>
+                     <option value="1979">1979</option>
+                     <option value="1978">1978</option>
+                     <option value="1977">1977</option>
+                     <option value="1976">1976</option>
+                     <option value="1975">1975</option>
+                     <option value="1974">1974</option>
+                     <option value="1973">1973</option>
+                     <option value="1972">1972</option>
+                     <option value="1971">1971</option>
+                     <option value="1970">1970</option>
+                     <option value="1969">1969</option>
+                     <option value="1968">1968</option>
+                     <option value="1967">1967</option>
+                     <option value="1966">1966</option>
+                     <option value="1965">1965</option>
+                     <option value="1964">1964</option>
+                     <option value="1963">1963</option>
+                     <option value="1962">1962</option>
+                     <option value="1961">1961</option>
+                     <option value="1960">1960</option>
+                  </select>
 
-                     <label for="number">Telefon:</label>
-                     <input
-                        type="number"
-                        name="number"
-                        value=""
-                        autocomplete="on"
-                        required>
+                  <label for="number">Telefon:</label>
+                  <input
+                     type="number"
+                     name="number"
+                     value=""
+                     autocomplete="on"
+                     required
+                  />
 
-                     <label for="mail">E-post:</label>
-                     <input
-                        type="text"
-                        name="mail"
-                        value=""
-                        autocomplete="on"
-                        required>
+                  <label for="mail">E-post:</label>
+                  <input
+                     type="text"
+                     name="mail"
+                     value=""
+                     autocomplete="on"
+                     required
+                  />
 
-                     <label for="gender">Kjønn:</label>
-                     <select class="select-gender" name="gender" id="gender">
-                        <option value="---------">---------</option>
-                        <option value="mann">mann</option>
-                        <option value="kvinne">kvinne</option>
-                        <option value="udefinert">udefinert</option>
-                        <option value="andre">andre</option>
-                     </select>
+                  <label for="gender">Kjønn:</label>
+                  <select class="select-gender" name="gender" id="gender">
+                     <option value="---------">---------</option>
+                     <option value="mann">mann</option>
+                     <option value="kvinne">kvinne</option>
+                     <option value="udefinert">udefinert</option>
+                     <option value="andre">andre</option>
+                  </select>
 
-                     <label for="membership">Type medlemsskap:</label>
-                     <select class="select-membership" name="membership" id="membership">
-                        <option value="regular">Ordinær kontingent (450,-)</option>
-                        <option value="reduced">Redusert kontingent (150,-)</option>
-                        <option value="highest">Høy kontingent (950,-) </option>
-                     </select>
+                  <label for="membership">Type medlemsskap:</label>
+                  <select
+                     class="select-membership"
+                     name="membership"
+                     id="membership"
+                  >
+                     <option value="regular">Ordinær kontingent (450,-)</option>
+                     <option value="reduced">
+                        Redusert kontingent (150,-)
+                     </option>
+                     <option value="highest">Høy kontingent (950,-)</option>
+                  </select>
 
-                     <label for="welcome-mail">Ønsker du velkomstpakke tilsendt i posten?</label>
-                     <select class="select-welcome" name="welcome-mail" id="welcome">
-                        <option value="yes">Ja</option>
-                        <option value="no">Nei</option>
-                     </select>
+                  <label for="welcome-mail"
+                     >Ønsker du velkomstpakke tilsendt i posten?</label
+                  >
+                  <select
+                     class="select-welcome"
+                     name="welcome-mail"
+                     id="welcome"
+                  >
+                     <option value="yes">Ja</option>
+                     <option value="no">Nei</option>
+                  </select>
 
-                     <label for="participating">Ønsker du å engasjere deg som frivillig?</label>
-                     <select class="select-welcome" name="participating" id="participating">
-                        <option value="yes">Ja</option>
-                        <option value="no">Nei</option>
-                     </select>
-                     <input class="submit-button" type="submit" value="Send data">
+                  <label for="participating"
+                     >Ønsker du å engasjere deg som frivillig?</label
+                  >
+                  <select
+                     class="select-welcome"
+                     name="participating"
+                     id="participating"
+                  >
+                     <option value="yes">Ja</option>
+                     <option value="no">Nei</option>
+                  </select>
+                  <input
+                     class="submit-button"
+                     type="submit"
+                     value="Send data"
+                  />
                </fieldset>
                <fieldset class="fieldset">
                   <legend class="legend">Betaling</legend>
@@ -408,46 +541,61 @@
                      <option value="paypal">PayPal</option>
                   </select>
 
-
                   <label for="card-number">Kredittkortnummer:</label>
-                  <input class="card-number"
+                  <input
+                     class="card-number"
                      type="text"
                      name="card-number"
                      placeholder="0000 0000 0000 0000"
                      value=""
                      autocomplete="off"
-                     required>
-                     <input class="submit-button" type="submit" value="Send data">
+                     required
+                  />
+                  <input
+                     class="submit-button"
+                     type="submit"
+                     value="Send data"
+                  />
                </fieldset>
             </form>
          </section>
       </main>
 
-      <!-- Footer / bunntekst -->
-      <footer class="footer">
-         <div class="footer-container">
-            <div class="footer-flex1">
-               <img div class="nav-logo"
-               src="assets/MDG_logo.png" alt="MDG-logo">
-            </div>
-            <div class="footer-flex2">
-               <h3 class="MDG-footer">Miljøpartiet De Grønne</h3>
-               <p>Hausmanns gate 19, 0182 Oslo</p>
-               <p>E-post: mdg@mdg.no</p>
-               <p>Telefon: 23 69 94 11</p>
-               <p class="bold">Donasjoner:</p>
-               <p>Kontonummer: 1254.05.52477</p>
-               <p>Vipps-nummer: 13124</p>
-            </div>
+      <!-- Footer -->
+      <footer class="footer-container">
+         <div class="footer-flex1">
+            <img
+               div
+               class="mdg-logo"
+               src="assets/MDG_logo.png"
+               alt="MDG-logo"
+            />
+         </div>
+         <div class="footer-flex2">
+            <h3 class="text-footer">Miljøpartiet De Grønne</h3>
+            <p>Hausmanns gate 19, 0182 Oslo</p>
+            <p>E-post: mdg@mdg.no</p>
+            <p>Telefon: 23 69 94 11</p>
+            <p class="bold">Donasjoner:</p>
+            <p>Kontonummer: 1254.05.52477</p>
+            <p>Vipps-nummer: 13124</p>
+         </div>
 
-            <div class="footer-flex3">
-               <h3 class="h3">Mer info</h3>
-                  <a class="footer-link" href="https://www.mdg.no/kontakt" target="_blank">Kontakt oss</a>
-                  <a class="footer-link" href="https://www.mdg.no/personvern_og_informasjonskapsler" target="_blank">Personvernerklæring</a>
-               </div>
-            </div>
+         <div class="footer-flex3">
+            <h3 class="h3">Mer info</h3>
+            <a
+               class="footer-link"
+               href="https://www.mdg.no/kontakt"
+               target="_blank"
+               >Kontakt oss</a
+            >
+            <a
+               class="footer-link"
+               href="https://www.mdg.no/personvern_og_informasjonskapsler"
+               target="_blank"
+               >Personvernerklæring</a
+            >
          </div>
       </footer>
    </body>
 </html>
-
