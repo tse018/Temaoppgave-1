@@ -194,7 +194,7 @@ and sticked on top when scrolling */
 .styret {
    width: 100vw;
    min-height: 100vh;
-   padding: 0 0 0 50px;
+   padding: 0 0 50px;
 }
 
 .wrapper {
