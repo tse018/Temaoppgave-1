@@ -1,6 +1,9 @@
-/* unique IDs for navigation purpose
+/*
+unique IDs for navigation purpose
 added padding and margin so section header
-will display little below navbar when clicked on */
+will display little below navbar when clicked on
+*/
+
 #politikk {
    padding: 80px 0 0;
    margin: -60px 0 0;
@@ -18,7 +21,7 @@ will display little below navbar when clicked on */
    margin: -60px 0 0;
 }
 
-/* universal using elements throughout the website */
+/**** universal using elements throughout the website ****/
 .font-style {
    font-family: "Montserrat", sans-serif;
 }
@@ -32,13 +35,13 @@ will display little below navbar when clicked on */
    color: white;
 }
 
-.h2 {
+.text-size1 {
    padding: 5px 0 10px;
    font-size: 30px;
    line-height: 2;
 }
 
-.h3 {
+.text-size2 {
    font-size: 25px;
    line-height: 80px;
 }
@@ -87,12 +90,10 @@ will display little below navbar when clicked on */
    padding: 0 0 0 50px;
 }
 
-/* styling navbar ul */
 .navbar-ul {
    padding: 20px 0;
 }
 
-/* making navbar inline blocks  */
 .navbar-li {
    display: inline-block;
    margin: 10px 50px 30px 20px;
@@ -100,7 +101,6 @@ will display little below navbar when clicked on */
    letter-spacing: 2px;
 }
 
-/* styling navbar anchor/links */
 .navbar a {
    text-decoration: none;
    color: white;
@@ -108,19 +108,16 @@ will display little below navbar when clicked on */
    width: 100vw;
 }
 
-/* link effect */
 .navbar a:hover {
    color: #de549b;
    background-color: white;
    font-weight: bold;
 }
 
-/* when clicked */
 .navbar a:active {
    background-color: #265301;
 }
 
-/* mouse covering */
 .navbar a:focus {
    background-color: #265301;
    font-weight: bold;
@@ -133,12 +130,11 @@ will display little below navbar when clicked on */
    justify-content: center;
    width: 100vw;
    min-height: 100vh;
-   overflow: scroll; /* not required anymore, added min-height */
+   overflow: scroll;
 }
 
-/* creating content boxes / flex-items */
 .flex-item {
-   width: 25vw; /* each flex item will be 25 viewport */
+   width: 25vw;
    min-height: 50vh;
    margin: 10px 15px 25px;
    padding: 5px 0 0 15px;
@@ -148,7 +144,6 @@ will display little below navbar when clicked on */
    line-height: 2;
 }
 
-/* styling list elements inside flex-items */
 .flex-item li {
    list-style: square inside;
 }
@@ -174,7 +169,7 @@ will display little below navbar when clicked on */
 }
 
 .flexbox-video {
-   width: 65vw; /* this flex item will be 65 viewport */
+   width: 65vw;
    height: 500px;
    margin: 0px 15px;
 }
@@ -186,6 +181,7 @@ will display little below navbar when clicked on */
    grid-template-rows: 1fr;
    grid-gap: 20px;
    width: 100%;
+   justify-items:center;
 }
 
 /********* section - bli med form ***********/
@@ -244,12 +240,12 @@ will display little below navbar when clicked on */
 
 /******* section - footer *********/
 .footer-container {
-   border: 10px solid;
    display: flex;
    flex-wrap: wrap;
-   width: 100vw;
-   height: 400px;
    background-color: rgba(118, 157, 43, 0.8);
+   width: 100vw;
+   height: 300px;
+   margin: 100px 0 0;
    color: white;
    font-size: 20px;
    text-align: left;
